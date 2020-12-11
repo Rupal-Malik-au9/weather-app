@@ -11,7 +11,7 @@ const Weather = props => {
                 </h5>
                 {props.temp_celsius ? (
                     <h1 className="py-2">{props.temp_celsius}&deg;</h1>
-                ) : null}
+                ) : <h3>Go on type the city's name and the country to find weather.</h3>}
 
                 {/**show max and min temp */}
                 {minmaxTemp(props.temp_min, props.temp_max)}
